@@ -173,6 +173,7 @@ RED.editor = (function() {
     }
 
     function createDialog(){
+        return;
         $( "#dialog" ).dialog({
                 modal: true,
                 autoOpen: false,
@@ -665,8 +666,9 @@ RED.editor = (function() {
         });
         $('<input type="text" style="display: none;" />').appendTo("#dialog-form");
         prepareEditDialog(node,node._def,"node-input");
-        $("#dialog").i18n();
-        $( "#dialog" ).dialog("option","title","Edit "+type+" node").dialog( "open" );
+        $("#dialog-form").i18n();
+        //$( "#dialog" ).dialog("option","title","Edit "+type+" node").dialog( "open" );
+        $("#workspace-tray").addClass('open');
     }
 
     function showEditConfigNodeDialog(name,type,id) {
