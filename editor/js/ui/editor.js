@@ -668,6 +668,7 @@ RED.editor = (function() {
         prepareEditDialog(node,node._def,"node-input");
         $("#dialog-form").i18n();
         //$( "#dialog" ).dialog("option","title","Edit "+type+" node").dialog( "open" );
+        $("#workspace-shade").show();
         $("#workspace-tray").addClass('open');
     }
 

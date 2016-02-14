@@ -53,17 +53,37 @@
     position:absolute;
     margin: 0;
     top: 0;
-    right: -520px;
-    bottom: 25px;
+    right: -530px;
+    bottom: 0;
     width: 520px;
     background: #fff;
     border-left: 1px solid $primary-border-color;
     box-sizing:border-box;
     transition: right 0.6s ease;
-    padding: 20px;
+    box-shadow: -1px 0 10px rgba(0,0,0,0.1);
 }
 #workspace-tray.open {
     right: 0;
+}
+.workspace-tray-body {
+    padding: 20px;
+}
+.workspace-tray-header {
+    height: 40px;
+    border-bottom: 1px solid $primary-border-color;
+    background: $palette-header-background;
+}
+.workspace-tray-footer {
+    @include component-footer;
+    height: 40px;
+}
+#workspace-shade {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(220,220,220,0.5);
 }
 #workspace-add-tab {
     position: absolute;
