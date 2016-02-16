@@ -70,7 +70,10 @@
             <div class="workspace-tray-body">
                 <form id="dialog-form" class="form-horizontal"></form>
             </div>
-            <div class="workspace-tray-footer"></div>
+            <div class="workspace-tray-footer">
+                <button type="button" id="node-dialog-ok">Ok</button>
+                <button type="button" id="node-dialog-cancel">Cancel</button>
+            </div>
         </div>
     </div>
     <div id="sidebar">

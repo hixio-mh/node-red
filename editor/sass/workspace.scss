@@ -53,29 +53,46 @@
     position:absolute;
     margin: 0;
     top: 0;
-    right: -530px;
-    bottom: 0;
-    width: 520px;
+    min-width: 500px;
+    width: auto;
+    right: -1000px;
+    bottom: 25px;
     background: #fff;
     border-left: 1px solid $primary-border-color;
-    box-sizing:border-box;
-    transition: right 0.6s ease;
+    border-bottom: 1px solid $primary-border-color;
+    box-sizing: content-box;
+    //transition: right 0.3s ease;
     box-shadow: -1px 0 10px rgba(0,0,0,0.1);
 }
 #workspace-tray.open {
     right: 0;
 }
 .workspace-tray-body {
+    position:absolute;
+    top: 40px;
+    bottom: 50px;
+    left:0;
+    right:0;
     padding: 20px;
+    overflow-y: scroll;
 }
 .workspace-tray-header {
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
     height: 40px;
     border-bottom: 1px solid $primary-border-color;
     background: $palette-header-background;
 }
 .workspace-tray-footer {
     @include component-footer;
-    height: 40px;
+    height: auto;
+    padding: 8px;
+    button {
+        @include workspace-button;
+        padding: 0.4em 1em;
+    }
+
 }
 #workspace-shade {
     position: absolute;
