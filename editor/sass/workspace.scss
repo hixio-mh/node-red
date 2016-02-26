@@ -49,34 +49,40 @@
 #workspace-tabs {
     margin-right: 35px;
 }
-#workspace-tray {
+
+#editor-stack {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0px;
+    right: 323px;
+    width: 0;
+}
+.editor-tray {
     position:absolute;
     margin: 0;
     top: 0;
     min-width: 500px;
     width: auto;
     right: -1000px;
-    bottom: 25px;
+    bottom: 0;
     background: #fff;
     border-left: 1px solid $primary-border-color;
     border-bottom: 1px solid $primary-border-color;
     box-sizing: content-box;
-    //transition: right 0.3s ease;
     box-shadow: -1px 0 10px rgba(0,0,0,0.1);
 }
-#workspace-tray.open {
+.editor-tray.open {
     right: 0;
 }
-.workspace-tray-body {
-    position:absolute;
-    top: 40px;
-    bottom: 50px;
-    left:0;
-    right:0;
+.editor-tray-body {
+    width: auto;
     padding: 20px;
+    min-width: 500px;
+    box-sizing: border-box;
     overflow-y: scroll;
 }
-.workspace-tray-header {
+.editor-tray-header {
     padding: 10px;
     box-sizing: border-box;
     font-weight: bold;
@@ -84,7 +90,7 @@
     border-bottom: 1px solid $primary-border-color;
     background: $palette-header-background;
 }
-.workspace-tray-footer {
+.editor-tray-footer {
     @include component-footer;
     height: auto;
     padding: 8px;
@@ -94,7 +100,7 @@
     }
 
 }
-#workspace-shade {
+#editor-shade {
     position: absolute;
     top:0;
     bottom:0;
