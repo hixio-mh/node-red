@@ -50,7 +50,7 @@
         "raw-body":"2.1.6",
         "semver": "5.1.0",
         "sentiment":"1.0.6",
-        "uglify-js":"2.6.2",
+        "uglify-js":"2.8.29",
         "when": "3.7.7",
         "ws": "0.8.1",
         "xml2js":"0.4.16",
